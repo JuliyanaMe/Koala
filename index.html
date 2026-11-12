@@ -94,13 +94,14 @@
     .koala .fur { fill: var(--fur); }
     .koala .fur-light { fill: #f8fbff; }
     .koala .fur-shadow { fill: var(--shadow); }
-    .koala .nose { fill: #354458; }
+    .koala .nose { fill: #f98ea9; }
     .koala .eye-white { fill: white; }
     .koala .iris { fill: #48aee9; stroke: #348fc9; stroke-width: 2; }
     .koala .pupil { fill: #163d62; }
     .koala .eye-glint { fill: white; }
-    .koala .cheek { fill: #ffacc5; opacity: .68; }
-    .koala .mouth { fill: none; stroke: #765a65; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+    .koala .cheek { fill: #ffacc5; opacity: .85; }
+    .koala .mouth { fill: none; stroke: #7a5761; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+    .koala .mouth-inner { fill: #f7b5c9; opacity: .95; }
     .koala .brow { fill: none; stroke: #778393; stroke-width: 4; stroke-linecap: round; }
     .koala .expression, .koala .tear { display: none; }
     .koala .tear { fill: #66c8ff; }
@@ -212,16 +213,16 @@
           <circle class="ear-inner" cx="281" cy="99" r="39"/>
           <circle cx="79" cy="99" r="27" fill="#ffd2df" opacity=".8"/>
           <circle cx="281" cy="99" r="27" fill="#ffd2df" opacity=".8"/>
-          <ellipse class="fur" cx="180" cy="168" rx="111" ry="111"/>
-          <ellipse class="fur-light" cx="180" cy="177" rx="88" ry="91"/>
+          <ellipse class="fur" cx="180" cy="168" rx="121" ry="116"/>
+          <ellipse class="fur-light" cx="180" cy="177" rx="94" ry="95"/>
           <path class="fur-shadow" d="M81 153c9-44 38-77 76-88-22 33-27 73-16 108-22-12-41-17-60-20zm198 0c-9-44-38-77-76-88 22 33 27 73 16 108 22-12 41-17 60-20z" opacity=".72"/>
-          <ellipse class="eye-white" cx="137" cy="166" rx="26" ry="31"/>
-          <ellipse class="eye-white" cx="223" cy="166" rx="26" ry="31"/>
-          <ellipse class="iris" cx="139" cy="169" rx="17" ry="22"/>
-          <ellipse class="iris" cx="221" cy="169" rx="17" ry="22"/>
+          <ellipse class="eye-white" cx="137" cy="166" rx="28" ry="34"/>
+          <ellipse class="eye-white" cx="223" cy="166" rx="28" ry="34"/>
+          <ellipse class="iris" cx="139" cy="169" rx="18" ry="24"/>
+          <ellipse class="iris" cx="221" cy="169" rx="18" ry="24"/>
           <ellipse class="pupil" cx="141" cy="171" rx="10" ry="15"/>
           <ellipse class="pupil" cx="219" cy="171" rx="10" ry="15"/>
-          <circle class="eye-glint" cx="134" cy="160" r="7"/><circle class="eye-glint" cx="214" cy="160" r="7"/>
+          <circle class="eye-glint" cx="133" cy="160" r="7"/><circle class="eye-glint" cx="213" cy="160" r="7"/>
           <circle class="eye-glint" cx="146" cy="177" r="3"/><circle class="eye-glint" cx="226" cy="177" r="3"/>
           <g class="expression eye-stars" fill="#fff" stroke="#8edcff" stroke-width="2">
             <path d="m127 144 4 9 9 1-7 6 2 9-8-5-8 5 2-9-7-6 10-1z"/><path d="m226 141 3 7 8 1-6 5 2 8-7-4-7 4 2-8-6-5 8-1z"/>
@@ -232,16 +233,19 @@
           <path class="brow brow-sad" d="m117 126 25 7m76-7-25 7"/>
           <path class="brow brow-angry" d="m116 140 28-10m100 10-28-10"/>
           <path class="brow brow-scared" d="m116 130 25-3m103 3-25-3"/>
-          <ellipse class="cheek" cx="107" cy="207" rx="20" ry="11"/><ellipse class="cheek" cx="253" cy="207" rx="20" ry="11"/>
-          <ellipse class="blush-extra" cx="107" cy="207" rx="24" ry="15"/><ellipse class="blush-extra" cx="253" cy="207" rx="24" ry="15"/>
-          <path class="nose" d="M157 191c0-13 12-21 23-21s23 8 23 21c0 12-12 25-23 25s-23-13-23-25z"/>
+          <ellipse class="cheek" cx="106" cy="209" rx="24" ry="14"/><ellipse class="cheek" cx="254" cy="209" rx="24" ry="14"/>
+          <ellipse class="blush-extra" cx="106" cy="209" rx="30" ry="18"/><ellipse class="blush-extra" cx="254" cy="209" rx="30" ry="18"/>
+          <path class="nose" d="M157 192c0-13 12-21 23-21s23 8 23 21c0 12-12 25-23 25s-23-13-23-25z"/>
           <ellipse cx="170" cy="183" rx="6" ry="3" fill="#fff" opacity=".5"/>
-          <path class="mouth mouth-happy" d="M164 228q16 15 32 0" fill="none" stroke="#8a5a64" stroke-width="5" stroke-linecap="round"/>
-          <path class="mouth mouth-sad" d="M164 240q16-17 32 0" fill="none" stroke="#8a5a64" stroke-width="5" stroke-linecap="round"/>
+
+          <path class="mouth mouth-happy" d="M152 230c10 16 18 23 28 23s18-7 28-23" fill="none" stroke="#8a5a64" stroke-width="5" stroke-linecap="round"/>
+          <path class="mouth mouth-happy mouth-inner" d="M163 232c8 12 13 16 17 16s9-4 18-16" fill="none" stroke="#f7b5c9" stroke-width="3" stroke-linecap="round"/>
+
+          <path class="mouth mouth-sad" d="M164 240q16-19 32 0" fill="none" stroke="#8a5a64" stroke-width="5" stroke-linecap="round"/>
           <path class="mouth mouth-excited" d="M160 226q20 18 40 0q0 18-20 25q-20-7-20-25z" fill="#db8ca2" stroke="#8a5a64" stroke-width="2.4" stroke-linejoin="round"/>
           <path class="mouth mouth-angry" d="M164 235q16-9 32 0" fill="none" stroke="#7f5d62" stroke-width="5" stroke-linecap="round"/>
           <ellipse class="mouth mouth-shocked" cx="180" cy="237" rx="10" ry="13" fill="#f5b0c2" stroke="#7a5d66" stroke-width="2"/>
-          <path class="mouth mouth-cute" d="M165 231c9 13 12 11 15 0c3 11 6 11 15 0" fill="none" stroke="#8a5a64" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path class="mouth mouth-cute" d="M161 231c7 12 12 17 19 17 7 0 12-5 19-17" fill="none" stroke="#8a5a64" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
           <path class="mouth mouth-scared" d="M163 240q17-16 34 0" fill="none" stroke="#8a5a64" stroke-width="5" stroke-linecap="round"/>
           <path class="tear" d="M107 183c-3 10-10 16-8 24 2 8 13 8 15 0 2-7-4-14-7-24zm146 0c-3 10-10 16-8 24 2 8 13 8 15 0 2-7-4-14-7-24z"/>
           <path class="fur-light" d="M153 75q-3-18 10-27 0 16 12 23 4-20 20-25-5 20 5 31-23-8-47-2z"/>
