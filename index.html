@@ -94,14 +94,16 @@
     .koala .fur { fill: var(--fur); }
     .koala .fur-light { fill: #f8fbff; }
     .koala .fur-shadow { fill: var(--shadow); }
-    .koala .nose { fill: #f98ea9; }
+    .koala .nose { fill: #2e3b4d; }
+    .koala .nostril { fill: #1a2431; }
+    .koala .snout { fill: #fdf1f5; opacity: .84; }
     .koala .eye-white { fill: white; }
     .koala .iris { fill: #48aee9; stroke: #348fc9; stroke-width: 2; }
     .koala .pupil { fill: #163d62; }
     .koala .eye-glint { fill: white; }
     .koala .cheek { fill: #ffacc5; opacity: .85; }
     .koala .mouth { fill: none; stroke: #7a5761; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
-    .koala .mouth-inner { fill: #f7b5c9; opacity: .95; }
+    .koala .mouth-inner { fill: none; stroke: #f7b5c9; stroke-width: 3; stroke-linecap: round; }
     .koala .brow { fill: none; stroke: #778393; stroke-width: 4; stroke-linecap: round; }
     .koala .expression, .koala .tear { display: none; }
     .koala .tear { fill: #66c8ff; }
@@ -235,11 +237,14 @@
           <path class="brow brow-scared" d="m116 130 25-3m103 3-25-3"/>
           <ellipse class="cheek" cx="106" cy="209" rx="24" ry="14"/><ellipse class="cheek" cx="254" cy="209" rx="24" ry="14"/>
           <ellipse class="blush-extra" cx="106" cy="209" rx="30" ry="18"/><ellipse class="blush-extra" cx="254" cy="209" rx="30" ry="18"/>
-          <path class="nose" d="M157 192c0-13 12-21 23-21s23 8 23 21c0 12-12 25-23 25s-23-13-23-25z"/>
+          <ellipse class="snout" cx="180" cy="208" rx="28" ry="18"/>
+          <path class="nose" d="M157 191c0-13 10-24 23-24s23 11 23 24c0 15-10 27-23 27s-23-12-23-27z"/>
+          <ellipse class="nostril" cx="168" cy="200" rx="4.5" ry="5"/>
+          <ellipse class="nostril" cx="192" cy="200" rx="4.5" ry="5"/>
           <ellipse cx="170" cy="183" rx="6" ry="3" fill="#fff" opacity=".5"/>
 
           <path class="mouth mouth-happy" d="M152 230c10 16 18 23 28 23s18-7 28-23" fill="none" stroke="#8a5a64" stroke-width="5" stroke-linecap="round"/>
-          <path class="mouth mouth-happy mouth-inner" d="M163 232c8 12 13 16 17 16s9-4 18-16" fill="none" stroke="#f7b5c9" stroke-width="3" stroke-linecap="round"/>
+          <path class="mouth-inner mouth-happy" d="M163 231c6 11 11 14 17 14s11-3 17-14" fill="none" stroke="#f7b5c9" stroke-width="3" stroke-linecap="round"/>
 
           <path class="mouth mouth-sad" d="M164 240q16-19 32 0" fill="none" stroke="#8a5a64" stroke-width="5" stroke-linecap="round"/>
           <path class="mouth mouth-excited" d="M160 226q20 18 40 0q0 18-20 25q-20-7-20-25z" fill="#db8ca2" stroke="#8a5a64" stroke-width="2.4" stroke-linejoin="round"/>
